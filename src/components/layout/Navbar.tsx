@@ -23,6 +23,9 @@ const Navbar = () => {
             <Link to="/services" className="text-gray-700 hover:text-connectpro-primary font-medium">
               Services
             </Link>
+            <Link to="/providers" className="text-gray-700 hover:text-connectpro-primary font-medium">
+              View Providers
+            </Link>
             <Link to="/about" className="text-gray-700 hover:text-connectpro-primary font-medium">
               About
             </Link>
@@ -72,6 +75,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link 
+              to="/providers" 
+              className="text-gray-700 hover:text-connectpro-primary font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              View Providers
             </Link>
             <Link 
               to="/about" 
