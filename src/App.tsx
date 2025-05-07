@@ -27,9 +27,9 @@ const App = () => (
           <Route path="/services" element={<Layout><ServicesPage /></Layout>} />
           <Route path="/about" element={<Layout><AboutPage /></Layout>} />
           <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/dashboard/:userType" element={<DashboardPage />} />
+          <Route path="/login" element={<Layout><LoginPage /></Layout>} />
+          <Route path="/signup" element={<Layout><SignupPage /></Layout>} />
+          <Route path="/dashboard/:userType" element={<Layout><DashboardPage /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
